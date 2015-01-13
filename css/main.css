@@ -9,6 +9,7 @@ html {
 
 body { 
 	background-color: #000; 
+	font-family: sans-serif;
 }
 
 img { 
@@ -21,6 +22,7 @@ img {
 	height: 300px;
 	background: transparent url("../images/clock-face.svg") no-repeat; 
 	position: relative;
+	margin: 0 auto;
 }
 
 .clock-face:target .hand-hour { 
@@ -49,3 +51,37 @@ img {
 	left: calc(50% - 14px); 
 }
 
+.btn { 
+	color: #fff;
+	text-decoration: none;
+	border-radius: 50%;
+	width: 8em;
+	line-height: 6em;
+	padding: 1em;
+	display: inline-block;
+	text-align: center;
+}
+
+.btn-forwards { 
+	background-color: green; 
+}
+
+.btn-forwards:hover { 
+	background-color: #fff;
+	color: #000;
+	transition: all 1000ms linear;
+}
+
+.btn-backwards:hover { 
+	background-color: #fff;
+	color: #000;
+	transition: all 1000ms linear;
+}
+
+.btn-backwards { 
+	background-color: red;
+}
+
+.main { 
+	text-align: center;
+}

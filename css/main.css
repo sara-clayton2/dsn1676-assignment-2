@@ -25,12 +25,12 @@ img {
 
 .clock-face:hover .hand-hour { 
 	transform: rotate(360deg);
-	transition: all 3000ms linear;
+	transition: all 6000ms linear;
 }
 
 .clock-face:hover .hand-minuite { 
-	transform: rotate(360deg);
-	transition: all 2000ms linear;
+	transform: rotate(4320deg);
+	transition: all 6000ms linear;
 }
 
 .hand { 
@@ -42,11 +42,11 @@ img {
 }
 
 .hand-hour { 	
-	
+	transform-origin: center bottom;
 }
 
 .hand-minuite { 
-
+	transform-origin: center bottom;
 }
 
 .center { 

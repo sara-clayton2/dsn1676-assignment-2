@@ -23,14 +23,12 @@ img {
 	position: relative;
 }
 
-.clock-face:hover .hand-hour { 
+.clock-face:target .hand-hour { 
 	transform: rotate(360deg);
-	transition: all 6000ms linear;
 }
 
-.clock-face:hover .hand-minuite { 
+.clock-face:target .hand-minuite { 
 	transform: rotate(4320deg);
-	transition: all 6000ms linear;
 }
 
 .hand { 
@@ -39,13 +37,7 @@ img {
 	bottom: 150px; 
 	left:150px;
 	left: calc(50% - 7px); 
-}
-
-.hand-hour { 	
-	transform-origin: center bottom;
-}
-
-.hand-minuite { 
+	transition: all 6000ms linear;
 	transform-origin: center bottom;
 }
 
